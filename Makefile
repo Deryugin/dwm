@@ -8,6 +8,8 @@ OBJ = ${SRC:.c=.o}
 
 all: options dwm
 
+CFLAGS += -I/usr/include/pango-1.0/ -I/usr/include/glib-2.0/ -I/usr/lib/glib-2.0/include/ -I/usr/include/harfbuzz/
+
 options:
 	@echo dwm build options:
 	@echo "CFLAGS   = ${CFLAGS}"
